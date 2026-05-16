@@ -37,5 +37,8 @@
   "type": "module",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@sveltejs/adapter-vercel": "^6.3.3"
   }
 }
