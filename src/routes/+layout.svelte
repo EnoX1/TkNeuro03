@@ -73,7 +73,9 @@
 	<NavUl {divClass} {ulClass}>
 		<NavLi href="/">主頁</NavLi>
 		<NavLi href="/pages/about">簡介</NavLi>
+		<NavLi href="/stats">門診統計</NavLi>
 	</NavUl>
+	
 </Navbar>
 
 <DarkMode btnClass={darkmodebtn} />

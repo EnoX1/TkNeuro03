@@ -12,22 +12,19 @@
 		</a>
 	</div>
 
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
-				<a href={resolve('/')}>Home</a>
-			</li>
-			<li aria-current={page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href={resolve('/about')}>About</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
+<nav>
+    <ul>
+        <li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
+            <a href="/">主頁</a>
+        </li>
+        <li aria-current={page.url.pathname === '/about' ? 'page' : undefined}>
+            <a href="/about">簡介</a>
+        </li>
+        <li aria-current={page.url.pathname === '/stats' ? 'page' : undefined}>
+            <a href="/stats">門診統計</a>
+        </li>
+    </ul>
+</nav>
 
 	<div class="corner">
 		<a href="https://github.com/sveltejs/kit">
