@@ -29,7 +29,7 @@ async function loadRecords() {
   async function saveStats() {
     const { error } = await supabase
       .from('daily_stats')
-      .upsert({ date, nhi_count, self_pay_count, notes })
+      .upsert({ date, nhi_count, self_pay_count, notes }, { onConflict: 'date' })
     if (error) {
       message = '儲存失敗：' + error.message
     } else {
