@@ -74,6 +74,7 @@
 		<NavLi href="/">主頁</NavLi>
 		<NavLi href="/pages/about">簡介</NavLi>
 		<NavLi href="/stats">門診統計</NavLi>
+		<NavLi href="/chronic">三高管理</NavLi>
 	</NavUl>
 	
 </Navbar>
